@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Contacto from './../views/Contacto.vue'
 import CarritoVentas from './../views/Carrito.vue'
-
+import Publicaciones from './../views/Publicaciones.vue'
 Vue.use(VueRouter)
 
   const routes = [
@@ -29,7 +29,13 @@ Vue.use(VueRouter)
     path: '/carrito',
     name: 'Carrito',
     component: CarritoVentas
-  }
+  },
+  {
+    path: '/publicaciones',
+    name: 'Post',
+    component: Publicaciones
+  },
+  
 ]
 
 const router = new VueRouter({

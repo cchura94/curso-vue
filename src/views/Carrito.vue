@@ -106,6 +106,8 @@ export default {
         }
     },
     created(){
+        
+
         this.productos.push(this.prod) 
         this.productos.push({
             nombre: "Televisor",
@@ -119,6 +121,16 @@ export default {
     },
     methods: {
         add_carrito(p){
+           /*const { value: email } = Swal.fire({
+            title: 'Ingrese cantidad',
+            input: 'email',
+            inputPlaceholder: 'Enter your email address'
+            })
+
+            if (email) {
+            Swal.fire(`Entered email: ${email}`)
+            }*/
+
             var cant = prompt("Ingrese la cantidad:")
 
             this.carrito.push({
